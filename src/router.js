@@ -24,6 +24,11 @@ export default new Router({
       component: () => import('./views/Supplier.vue')
     },
     {
+      path: '/transaksi/penjualan',
+      name: 'Penjualan',
+      component: () => import('./views/Penjualan.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

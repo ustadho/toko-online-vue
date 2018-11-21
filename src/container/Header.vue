@@ -15,6 +15,11 @@
             <b-dropdown-item to="/master/supplier">Supplier</b-dropdown-item>
             <b-dropdown-item href="#">Pelanggan</b-dropdown-item>
           </b-nav-item-dropdown>
+          <b-nav-item-dropdown text="Transaksi" left>
+            <b-dropdown-item to="/transaksi/penjualan">Penjualan</b-dropdown-item>
+            <b-dropdown-item to="/transaksi/pembelian">Pembelian</b-dropdown-item>
+            
+          </b-nav-item-dropdown>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
