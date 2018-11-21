@@ -21,7 +21,7 @@
                   <td>{{i.nama}}</td>
                   <td>{{i.harga}}</td>
                   <td>{{i.satuan}}</td>
-                  <td>{{i.kategori.text}}</td>
+                  <td>{{i.kategori ===null? "": i.kategori.nama}}</td>
                   <td>
                     <b-button @click="hapus(i)" size="sm" variant="danger">
                         Hapus
@@ -50,7 +50,7 @@
             </div>
             <div class="form-group">
               <label for="kategori">Kategori</label>
-              <v-select v-model="vm.kategori" label="text" :options="listKategori"></v-select>
+              <v-select v-model="vm.kategori" label="nama" :options="listKategori"></v-select>
             </div>
             <div class="form-group">
               <label for="harga">Harga</label>
