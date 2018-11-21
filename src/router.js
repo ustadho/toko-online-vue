@@ -14,6 +14,16 @@ export default new Router({
       component: Home
     },
     {
+      path: '/master/item',
+      name: 'item',
+      component: () => import('./views/Item.vue')
+    },
+    {
+      path: '/master/supplier',
+      name: 'supplier',
+      component: () => import('./views/Supplier.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
